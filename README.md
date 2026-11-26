@@ -1,3 +1,4 @@
+
 # pr-why
 
 Understand what a pull request changes, with a clear explanation grounded in its diff. `pr-why` is a small Python CLI that can summarize changed files offline or ask an OpenAI-compatible model to explain the change.
@@ -7,7 +8,7 @@ Understand what a pull request changes, with a clear explanation grounded in its
 Requires Python 3.10 or newer. From a clone of this repository:
 
 ```bash
-python -m pip install .
+python3 -m pip install .
 ```
 
 ## Use without an API key
@@ -44,8 +45,10 @@ This is an early project. Model explanations depend on the provider and may be w
 
 ## Development
 
+Tests run directly from a checkout with Python 3.10 or newer:
+
 ```bash
-python -m unittest discover -s tests
+python3 -m unittest discover -s tests -v
 ```
 
 ## License
