@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pr-why"
+version = "0.1.0"
+description = "Explain what a GitHub pull request changes, with evidence."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "PR Why contributors" }]
+keywords = ["github", "pull-request", "code-review", "open-source"]
+
+[project.scripts]
+pr-why = "pr_why.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
